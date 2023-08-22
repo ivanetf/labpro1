@@ -11,7 +11,9 @@ def q01():
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 
 #4. Faça um programa que leia e imprima um número inteiro.
-
+def q04():
+    num1 = int(input('digite um numero: '))
+    print(num1)
 #5. Faça um programa que leia dois números reais e os imprima.
 def q05():
     num1 = float(input('Digite um número: '))
