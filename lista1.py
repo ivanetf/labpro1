@@ -28,7 +28,13 @@ def q06():
   
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
-
+def q07():    
+    nome = input('digite seu nome: ')
+    endereco = input('digite seu endereço: ')
+    telefone = int(input('digite seu telefone: '))
+    print(nome)
+    print(endereco)
+    print(telefone)
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
 
@@ -110,4 +116,4 @@ def q15():
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
 
-q15()
+q07()
