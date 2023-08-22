@@ -59,7 +59,18 @@ def q10():
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def q11():
+    num1 = int(input('digite um numero: '))
+    num2 = int(input('digite um numero: '))
+    soma = num1 + num2
+    subtracao = num1 - num2
+    divisao = num1 / num2
+    multiplicacao = num1 * num2
 
+    print(f' a soma: {soma}')
+    print(f' a subtraçao: {subtracao}')
+    print(f' a divisao: {divisao}')
+    print(f' a multiplicacao: {multiplicacao}')
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
