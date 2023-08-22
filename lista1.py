@@ -83,6 +83,15 @@ def q13():
 
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base + altura) e a área (base * altura).
+def q14():
+    base = int(input('digite a base:  '))
+    altura = float(input('digite a sua altura: '))
+    perimetro = base + altura
+    area = base * altura
+
+    print(perimetro)
+    print(area)
+
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
