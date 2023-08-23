@@ -61,6 +61,15 @@ def q02():
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
+def q03():
+    num = int(input ('digite um numero: '))
+    if num%3==0:
+        print(' é múltiplo de 3: ')
+         
+    else:
+         print(' não é múltiplo de 3')
+        
+q03()
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 
