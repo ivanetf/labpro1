@@ -48,6 +48,16 @@ def q01():
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
+def q02():
+    num1 = int(input('digite um numero: '))
+    num2 = int(input('digite um numero: '))
+    soma = (num1 + num2)
+
+    if soma > 20:
+    print(f'resultado da soma {soma + 8}')
+
+    else: 
+    print(f'resultaldo da soma {soma - 5}')
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
