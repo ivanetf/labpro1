@@ -62,18 +62,31 @@ def q02():
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
 def q03():
-    num = int(input ('digite um numero: '))
+    num = int(input('digite um numero: '))
     if num%3==0:
-        print(' é múltiplo de 3: ')
+        print('é múltiplo de 3: ')
          
     else:
-         print(' não é múltiplo de 3')
-        
-q03()
+         print('não é múltiplo de 3')
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
+def q04():
+    num = int(input('digite um numero'))
+    if num%5==0:
+        print('é divisível por 5')
+
+    else:
+        print('nao é divisível por 5')
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+num = int(input('digite um numero: '))
+    if num%5==0:
+        print('é divisível por 5')
+    else:
+        print('não é divisível por 5')
+
+
+
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
