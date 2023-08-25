@@ -79,19 +79,18 @@ def q04():
         print('nao é divisível por 5')
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def q05():
 num = int(input('digite um numero: '))
     if num%5==0:
         print('é divisível por 5')
     else:
         print('não é divisível por 5')
 
-
-
-
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+
 
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
@@ -99,12 +98,27 @@ num = int(input('digite um numero: '))
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
 
+
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
 
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
+def q10():
+    num1 = int(input('digite um numero':'))
+    num2 = int(input('digite um numero:'))
+    num3 = int(input('digite um numero:'))
+    if num1<num2 and num2<num3:
+        print(f'{num1} - {num2} - {num3}')
+   
+    if num2<num1 and num1<num3:
+        print(f'{num2} - {num1} - {num3}')
+
+    if num3<2 and num2<num3:
+        print(f'{num3} - {num2} - {num1}')
+    
+
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 
