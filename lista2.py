@@ -91,12 +91,22 @@ num = int(input('digite um numero: '))
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
 
-
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
+def q07():
+        numero = int(input("Digite um número: "))
+        if 20 <= numero <= 50:
+            print("O número está compreendido entre 20 e 50.")
+        else:
+            print("O número não está compreendido entre 20 e 50.")
+
 
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
+def q08():
+    numero = int(input('digite o numero: '))
+    if numero < 20:
+    print ("Maior do que 20")
 
 
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
