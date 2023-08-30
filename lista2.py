@@ -127,7 +127,16 @@ def q10():
 
     if num3<2 and num2<num3:
         print(f'{num3} - {num2} - {num1}')
-    
+
+        numeros = []
+        
+        for i in range(3):
+            numero = int(input(f"Digite o {i+1}º número: "))
+            numeros.append(numero)
+        
+        numeros.sort()  # Ordena os números em ordem crescente
+        
+        print("Números em ordem crescente:", numeros)
 
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
