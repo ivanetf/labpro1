@@ -116,25 +116,21 @@ def q08():
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
 def q10():
-    num1 = int(input('digite um numero':'))
-    num2 = int(input('digite um numero:'))
-    num3 = int(input('digite um numero:'))
-    if num1<num2 and num2<num3:
-        print(f'{num1} - {num2} - {num3}')
-   
-    if num2<num1 and num1<num3:
-        print(f'{num2} - {num1} - {num3}')
-
-    if num3<2 and num2<num3:
-        print(f'{num3} - {num2} - {num1}')
-
-        numeros = []
-        
-        for i in range(3):
-            numero = int(input(f"Digite o {i+1}º número: "))
-        
-        print("Números em ordem crescente:", numeros)
-
+    a = int(input('1 Número: '))
+    b = int(input('2 Número: '))
+    c = int(input('3 Número: '))
+    if a<b and b<c:
+        print(f'{a} {b} {c}')
+    if a<c and c<a:
+        print(f'{a} {c} {b}')
+    if b<a and a<c:
+        print(f'{b} {a} {c}')
+    if b<c and c<a:
+        print(f'{b} {c} {a}')
+    if c<a and a<b:
+        print(f'{c} {a} {b}')
+    if c<b and b<a:
+        print(f'{c} {b} {a}')
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 def q11():
