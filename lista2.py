@@ -132,14 +132,16 @@ def q10():
         
         for i in range(3):
             numero = int(input(f"Digite o {i+1}º número: "))
-            numeros.append(numero)
-        
-        numeros.sort()  # Ordena os números em ordem crescente
         
         print("Números em ordem crescente:", numeros)
 
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    número = int(input('número: '))
+    maior = número
+    if número > maior
+    print(f'
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
