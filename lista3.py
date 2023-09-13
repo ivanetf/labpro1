@@ -10,11 +10,12 @@ print(x)
 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 def questao02():
-    pass
+    for x in range(
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
 def questao03():
-    pass
+   for x in range(0,500,5)
+    print(x)
 
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
