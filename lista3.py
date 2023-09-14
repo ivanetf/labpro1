@@ -21,12 +21,18 @@ def questao03():
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
 def questao04():
-    pass
+    for i in range(20):
+    nome = input("Digite o nome da pessoa: ")
+    idade = int(input("Digite a idade da pessoa: "))
+    sexo = input("Digite o sexo da pessoa (M/F): ")
+        if sexo == "M" and idade > 21:
+            print(" sexo masculino com mais de 21 anos:
+            print(nome)
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
-def questao05():
+def q05():
     pass
 
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
@@ -34,14 +40,14 @@ def questao05():
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
-def questao06():
+def q06():
     pass
 
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
-def questao07():
+def q07():
     pass
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
@@ -51,7 +57,7 @@ def questao07():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
-def questao08():
+def q08():
     pass
 
 #9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
@@ -63,7 +69,7 @@ def questao08():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
-def questao09():
+def q09():
     pass
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
@@ -74,20 +80,20 @@ def questao09():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
-def questao10():
+def q10():
     pass
     
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
-def questao11():
+def q11():
     pass
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
-def questao12():
+def q12():
     pass
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
@@ -106,7 +112,7 @@ def questao12():
 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
-def questao14():
+def q14():
     pass
 
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
@@ -129,18 +135,37 @@ def questao15():
 #  5 é o Divisor
 #  2 é o Quociente (resultado inteiro da divisão)
 #  0 é o Resto da Divisão
-def questao16():
+def q16():
     pass
 
 #17. Crie um programa que possa ler um conjunto de pedidos de compra e
 #calcule o valor total da compra. Cada pedido é composto pelos seguintes campos:
-#• número de pedido
+#• número de pCedido
 #72 Aula 3. Estruturas de Iteração
 #• data do pedido (dia, mês, ano)
 #• preço unitário
 #• quantidade
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
+ total_compra = 0
+
+   while True:
+    numero_pedido = int(input("Digite o número do pedido (ou 0 para sair): "))
+    if numero_pedido == 0:
+        break
+      
+    dia = int(input("Digite o dia do pedido: "))
+    mes = int(input("Digite o mês do pedido: "))
+    ano = int(input("Digite o ano do pedido: "))
+    preco_unitario = float(input("Digite o preço unitário: "))
+    quantidade = int(input("Digite a quantidade: "))
+    
+    valor_pedido = preco_unitario * quantidade
+    total_compra += valor_pedido
+    
+    print(f"Pedido {numero_pedido} ({dia}/{mes}/{ano}): R${valor_pedido:.2f}")
+    print(f"Valor total da compra: R${total_compra:.2f}")
+
 
 #18. Uma pousada estipulou o preço para a diária em R$30,00 e mais uma taxa de
 #serviços diários de:
@@ -223,6 +248,26 @@ def questao16():
 #Deverá imprimir também o total de litros gastos na viagem. O programa encerra
 #quando o usuário informar umvalor negativo de velocidade.
 #74 Aula 3. Estruturas de Iteração
+total_litros = 0
+
+while True:
+    velocidade = float(input("Digite a velocidade do carro (em km/h, negativo para sair): "))
+    
+    if velocidade < 0:
+        break
+    
+    tempo = float(input("Digite o período de tempo (em horas): "))
+  
+    distancia = tempo * velocidade
+    
+     (litros = distância / 10)
+    litros_consumidos = distancia / 10
+    
+    total_litros += litros_consumidos
+    
+    print(f"Trecho: Distância = {distancia} km, Litros Consumidos = {litros_consumidos} litros")
+    
+     print(f"Total de litros gastos na viagem: {total_litros} litros")
 
 #25. Faça umprograma que calcule o imposto de renda de umgrupo de contribuintes,
 #considerando que:
@@ -243,6 +288,35 @@ def questao16():
 #g) ao final o programa deverá imprimir o total do imposto arrecadado pela
 #Receita Federal e o número de contribuintes isentos;
 #h) leve em consideração o fato de o primeiro CIC informado poder ser zero.
+
+total_imposto = 0
+num_contribuintes_isentos = 0
+    while True:
+    cic = int(input("Digite o número do CIC (ou 0 para sair): "))
+
+      if cic == 0:
+        break
+    
+    num_dependentes = int(input("Digite o número de dependentes: "))
+    renda_bruta_anual = float(input("Digite a renda bruta anual: "))
+    
+    renda_liquida = renda_bruta_anual - (num_dependentes * 600)
+    
+        if renda_liquida <= 1000:
+        imposto = 0
+        num_contribuintes_isentos += 1
+        elif 1001 <= renda_liquida <= 5000:
+        imposto = renda_liquida * 0.15
+        else:
+        imposto = renda_liquida * 0.25
+    
+       total_imposto += imposto
+    
+       print(f"Contribuinte CIC {cic}: Imposto a ser pago: R${imposto:.2f}")
+
+       print(f"Total do imposto arrecadado: R${total_imposto:.2f}")
+       print(f"Número de contribuintes isentos: {num_contribuintes_isentos}")
+
 
 #26. Foi feita uma pesquisa de audiência de canal de TV em várias casas de uma
 #certa cidade, em umdeterminado dia. Para cada casa visitada foram fornecidos o
