@@ -48,7 +48,27 @@ def q06():
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
 def q07():
-    pass
+alunos = []
+
+for i in range(15):
+    nome = input(f"Digite o nome do aluno {i + 1}: ")
+    nota_prova1 = float(input(f"Digite a nota da prova 1 do aluno {i + 1}: "))
+    nota_prova2 = float(input(f"Digite a nota da prova 2 do aluno {i + 1}: "))
+    
+    media = (nota_prova1 + nota_prova2) / 2
+    
+    alunos.append([nome, nota_prova1, nota_prova2, media])
+
+print("\nListagem de Alunos:")
+print("Nome\tProva 1\tProva 2\tMédia")
+for aluno in alunos:
+    print(f"{aluno[0]}\t{aluno[1]}\t{aluno[2]}\t{aluno[3]:.2f}")
+
+soma_medias = sum(aluno[3] for aluno in alunos)
+media_geral = soma_medias / len(alunos)
+
+print(f"\nMédia Geral da Turma: {media_geral:.2f}")
+
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
@@ -70,7 +90,37 @@ def q08():
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
 def q09():
-    pass
+  
+idade_excelente_total = 0
+qtd_excelente = 0
+qtd_regular = 0
+qtd_bom = 0
+
+for i in range(20):
+    idade = int(input(f"Digite a idade do espectador {i + 1}: "))
+    opiniao = int(input(f"Digite a opinião do espectador {i + 1} (excelente - 3, bom - 2, regular - 1): "))
+
+  
+    if opiniao == 3:
+        idade_excelente_total += idade
+        qtd_excelente += 1
+    elif opiniao == 2:
+        qtd_bom += 1
+    elif opiniao == 1:
+        qtd_regular += 1
+ 
+          if qtd_excelente > 0:
+          media_idade_excelente = idade_excelente_total / qtd_excelente
+        else:
+        media_idade_excelente = 0
+
+          percentagem_bom = (qtd_bom / 20) * 100
+
+
+      print(f"Média das idades das pessoas que responderam excelente: {media_idade_excelente:.2f} anos")
+      print(f"Quantidade de pessoas que responderam regular: {qtd_regular}")
+      print(f"Percentagem de pessoas que responderam bom: {percentagem_bom:.2f}%")
+
 
 #10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 #que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
@@ -110,10 +160,71 @@ def q12():
 #• O total de consumo para os três tipos de consumidor
 #• Amédia de consumo dos tipos 1 e 2
 
+      total_consumo_residencial = 0
+      total_consumo_comercial = 0
+      total_consumo_industrial = 0
+      total_custos = 0
+      num_consumidores_residencial_comercial = 0
+
+      while True:
+    numero_consumidor = int(input("Digite o número do consumidor (ou 0 para sair): "))
+  
+    if numero_consumidor == 0:
+        break
+    
+    consumo_kwh = float(input("Digite a quantidade de kWh consumidos durante o mês: "))
+    tipo_consumidor = int(input("Digite o tipo do consumidor (1 - residencial, 2 - comercial, 3 - industrial): "))
+    
+    if tipo_consumidor == 1:
+        preco_por_kwh = 0.3
+        total_consumo_residencial += consumo_kwh
+    elif tipo_consumidor == 2:
+        preco_por_kwh = 0.5
+        total_consumo_comercial += consumo_kwh
+        num_consumidores_residencial_comercial += 1
+    elif tipo_consumidor == 3:
+        preco_por_kwh = 0.7
+        total_consumo_industrial += consumo_kwh
+    else:
+        print("Tipo de consumidor inválido. Ignorando este consumidor.")
+        continue
+    
+    custo_total = consumo_kwh * preco_por_kwh
+    total_custos += custo_total
+    
+  
+            print(f"Consumidor {numero_consumidor}: Custo Total = R${custo_total:.2f}")
+  
+            if num_consumidores_residencial_comercial > 0:
+    media_consumo_residencial_comercial = (total_consumo_residencial + total_consumo_comercial) / num_consumidores_residencial_comercial
+            else:
+    media_consumo_residencial_comercial = 0
+
+
+        print(f"Total de consumo residencial: {total_consumo_residencial} kWh")
+        print(f"Total de consumo comercial: {total_consumo_comercial} kWh")
+        print(f"Total de consumo industrial: {total_consumo_industrial} kWh")
+        print(f"Média de consumo dos tipos 1 e 2: {media_consumo_residencial_comercial:.2f} kWh")
+        print(f"Custo total para todos os consumidores: R${total_custos:.2f}")
+
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
 def q14():
-    pass
+     fatorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fatorial(n - 1)
+ 
+while True:
+    numero = int(input("Digite um número inteiro (ou um número menor que 1 para sair): "))
+    
+    if numero < 1:
+        break
+    
+    resultado = fatorial(numero)
+    print(f"O fatorial de {numero} é {resultado}")
+
 
 #15. Faça um programa que permita entrar com a idade de várias pessoas e
 #imprima:
@@ -204,6 +315,62 @@ def q16():
 #• o número de pessoas de Niterói torcedoras do Fluminense
 #3.12. Exercícios da Aula 73
 #Obs.: O programa encerra quando se digita 0 para o time.
+
+torcedores_fluminense = 0
+torcedores_botafogo = 0
+torcedores_vasco = 0
+torcedores_flamengo = 0
+torcedores_outros = 0
+media_salarial_botafogo = 0
+num_moradores_rj_outros = 0
+num_moradores_niteroi_fluminense = 0
+total_salarial_botafogo = 0
+total_torcedores_botafogo = 0
+
+
+while True:
+    time = int(input("Qual o seu time de coração? (1-Fluminense, 2-Botafogo, 3-Vasco, 4-Flamengo, 5-Outros, 0-Sair): "))
+    
+    if time == 0:
+        break
+    
+    moradia = int(input("Onde você mora? (1-RJ, 2-Niterói, 3-Outros): "))
+    salario = float(input("Qual o seu salário? "))
+    
+    if time == 1:
+        torcedores_fluminense += 1
+    elif time == 2:
+        torcedores_botafogo += 1
+        total_salarial_botafogo += salario
+        total_torcedores_botafogo += 1
+    elif time == 3:
+        torcedores_vasco += 1
+    elif time == 4:
+        torcedores_flamengo += 1
+    elif time == 5:
+        torcedores_outros += 1
+    
+    if moradia == 1 and time == 5:
+        num_moradores_rj_outros += 1
+    
+    if moradia == 2 and time == 1:
+        num_moradores_niteroi_fluminense += 1
+
+ 
+     if total_torcedores_botafogo > 0:
+    media_salarial_botafogo = total_salarial_botafogo / total_torcedores_botafogo
+
+
+print(f"Número de torcedores por clube:")
+print(f"Fluminense: {torcedores_fluminense}")
+print(f"Botafogo: {torcedores_botafogo}")
+print(f"Vasco: {torcedores_vasco}")
+print(f"Flamengo: {torcedores_flamengo}")
+print(f"Outros: {torcedores_outros}")
+print(f"Média salarial dos torcedores do Botafogo: R${media_salarial_botafogo:.2f}")
+print(f"Número de pessoas moradoras do Rio de Janeiro, torcedores de outros clubes: {num_moradores_rj_outros}")
+print(f"Número de pessoas de Niterói torcedoras do Fluminense: {num_moradores_niteroi_fluminense}")
+
 
 #21. Emuma universidade cada aluno possui os seguintes dados:
 #• Renda pessoal;
@@ -327,6 +494,47 @@ num_contribuintes_isentos = 0
 #número de pessoas que estavam assistindo;
 #• Calcule e imprima a porcentagem de audiência em cada canal.
 #Obs.: Para encerrar a entrada de dados, digite o número do canal zero.
+
+audiencia_canal4 = 0
+audiencia_canal5 = 0
+audiencia_canal7 = 0
+audiencia_canal12 = 0
+total_audiencia = 0
+
+while True:
+    canal = int(input("Digite o número do canal (4, 5, 7, 12) ou 0 para encerrar: "))
+    
+    if canal == 0:
+        break
+    
+    audiencia = int(input("Digite o número de pessoas assistindo: "))
+    
+    if canal == 4:
+        audiencia_canal4 += audiencia
+    elif canal == 5:
+        audiencia_canal5 += audiencia
+    elif canal == 7:
+        audiencia_canal7 += audiencia
+    elif canal == 12:
+        audiencia_canal12 += audiencia
+    
+    total_audiencia += audiencia
+
+       if total_audiencia > 0:
+    percentagem_canal4 = (audiencia_canal4 / total_audiencia) * 100
+    percentagem_canal5 = (audiencia_canal5 / total_audiencia) * 100
+    percentagem_canal7 = (audiencia_canal7 / total_audiencia) * 100
+    percentagem_canal12 = (audiencia_canal12 / total_audiencia) * 100
+    else:
+    percentagem_canal4 = 0
+    percentagem_canal5 = 0
+    percentagem_canal7 = 0
+    percentagem_canal12 = 0
+
+print(f"Porcentagem de audiência no Canal 4: {percentagem_canal4:.2f}%")
+print(f"Porcentagem de audiência no Canal 5: {percentagem_canal5:.2f}%")
+print(f"Porcentagem de audiência no Canal 7: {percentagem_canal7:.2f}%")
+print(f"Porcentagem de audiência no Canal 12: {percentagem_canal12:.2f}%")
 
 #27. Crie um programa que calcule e imprima o CR do período para os alunos de
 #computação. Para cada aluno, o algoritmo deverá ler:
