@@ -247,7 +247,7 @@ def questao15():
 #  2 é o Quociente (resultado inteiro da divisão)
 #  0 é o Resto da Divisão
 def q16():
-    pass
+    
 
 #17. Crie um programa que possa ler um conjunto de pedidos de compra e
 #calcule o valor total da compra. Cada pedido é composto pelos seguintes campos:
@@ -382,6 +382,20 @@ print(f"Número de pessoas de Niterói torcedoras do Fluminense: {num_moradores_
 #que a renda familiar e a porcentagem gasta com alimentação e outras despesas
 #em relação às rendas pessoal e familiar.
 #Obs.: O programa encerra quando se digita 0 para a renda pessoal.
+def q21():
+  renda_pessoal = 0
+  renda_familiar = 0
+  total_gasto_com_alimentacao = 0
+  total_gasto_com_outras_despesas = 0
+
+if aluno > 200:
+  total_gasto_com_outras_despesas += 1
+if aluno >= renda_pessoal:
+
+  
+
+
+
 
 #22. Crie um programa que ajude o DETRAN a saber o total de recursos que foram
 #arrecadados com a aplicação de multas de trânsito.
@@ -394,6 +408,7 @@ print(f"Número de pessoas de Niterói torcedoras do Fluminense: {num_moradores_
 #imprimir tambémo número da carteira domotorista que obteve o maior número
 #de multas.
 #Obs.: O programa encerra ao ler a carteira de motorista de valor 0.
+
 
 #23. Crie um programa que leia um conjunto de informações (nome, sexo, idade, peso
 #e altura) dos atletas que participaram de uma olimpíada, e informar:
