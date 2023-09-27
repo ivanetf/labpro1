@@ -127,9 +127,7 @@ def q15():
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
-def calcular_novo_salario(salario_atual, percentual_reajuste):
-    return salario_atual + (salario_atual * percentual_reajuste / 100)
-
+def q16():
         salario_atual = float(input("Digite o salário atual do funcionário: R$  "))
         percentual_reajuste = float(input("Digite o percentual de reajuste (%): "))
        
@@ -142,6 +140,11 @@ def calcular_novo_salario(salario_atual, percentual_reajuste):
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+def q17():
+        centigrados = float(input("Digite a temperatura em graus centígrados: "))
+
+        fahrenheit = (9 * centigrados + 160) / 5
+        print("A temperatura em graus Fahrenheit é:", fahrenheit)
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -155,6 +158,15 @@ def calcular_novo_salario(salario_atual, percentual_reajuste):
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def q18():
+        tempo = float(input("Digite o tempo decorrido na viagem (horas): "))
+        velocidade_media = float(input("Digite a velocidade média (km/h): "))
+
+        distancia_percorrida = tempo * velocidade_media
+        litros_combustivel = (distancia_percorrida) / 12
+
+        print("Distância percorrida: {:.2f} km" (distancia_percorrida))
+        print("Quantidade de litros de combustível consumidos: {:.2f} litros" (litros_combustivel))
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
