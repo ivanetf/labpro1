@@ -367,7 +367,7 @@ print(f"Botafogo: {torcedores_botafogo}")
 print(f"Vasco: {torcedores_vasco}")
 print(f"Flamengo: {torcedores_flamengo}")
 print(f"Outros: {torcedores_outros}")
-print(f"Média salarial dos torcedores do Botafogo: R${media_salarial_botafogo:.2f}")
+print(f"Média salarial dos torcedores do Botafogo: R${media_salarial_botafogo:}")
 print(f"Número de pessoas moradoras do Rio de Janeiro, torcedores de outros clubes: {num_moradores_rj_outros}")
 print(f"Número de pessoas de Niterói torcedoras do Fluminense: {num_moradores_niteroi_fluminense}")
 
