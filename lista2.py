@@ -255,6 +255,27 @@ nome = input(' Digite o nome: ')
 #22. Construa um programa que leia o percurso em quilômetros, o tipo do carro e
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
+def q22():
+    if tipo_carro == 'A':
+        consumo_litros = percurso_km / 12
+    elif tipo_carro == 'B':
+        consumo_litros = percurso_km / 9
+    elif tipo_carro == 'C':
+        consumo_litros = percurso_km / 8
+    else:
+        print(" Tipo de carro inválido")
+
+        percurso_km = float(input("Digite o percurso em quilômetros: "))
+        tipo_carro = input("Digite o tipo do carro (A, B ou C): ")
+
+        consumo_litros ==(percurso_km * tipo_carro)
+
+        if consumo_litros is None:
+            print("Tipo de carro inválido. Por favor, insira A, B ou C.")
+        else:
+            print("Consumo estimado de combustível:", consumo_litros, "litros")
+   
+
 
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
