@@ -132,7 +132,7 @@ def q10():
     if c<b and b<a:
         print(f'{c} {b} {a}')
 
-#11. Faça um programa que leia 3 números e imprima o maior deles.
+#11. Faça um programa que leia 3 números e imprima o maior deles.p1
 def q11():
     numero = int(input('Número: '))
     maior = numero
