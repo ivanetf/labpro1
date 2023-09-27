@@ -7,8 +7,18 @@ def q01():
     print('João Paulo Delgado Preti')
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
+    produto = 30 * 27
+    print("O produto de 30 e 27 é:", produto)
+
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
+def q02():
+    num1 = 5
+    num2 = 8
+    num3 = 12
+    media = (num1 + num2 + num3) / 3
+    
+    print("A média aritmética é:", media)
 
 #4. Faça um programa que leia e imprima um número inteiro.
 def q04():
@@ -39,7 +49,12 @@ def q07():
     print(telefone)
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
-
+def q08():
+    num1 = int(input("Digite o primeiro número inteiro: "))
+    num2 = int(input("Digite o segundo número inteiro: "))
+         subtracao = num1 - num2
+         print("A subtração dos números é:", )
+  
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
 def q09():
     num = float(input('Digite um número: '))
@@ -74,6 +89,11 @@ def q11():
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q12():
+    
+        numero = float(input("Digite um número real: "))
+        quadrado = numero ** 2 (numero)
+        print("O quadrado do número é:", quadrado)
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
@@ -134,8 +154,16 @@ def q15():
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
 
+
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
+def q20(): 
+        valor_dolar = float(input("Digite o valor em dólar (USD): $"))
+        cotacao_dolar = float(input("Digite a cotação do dólar (USD para BRL): R$"))
 
-q07()
+        valor_real = valor_dolar * cotacao_dolar
+        print("O valor em real (BRL) é: R$", valor_real)
+    
+
+
