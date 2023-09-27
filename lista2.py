@@ -144,8 +144,6 @@ def q11():
         maior = numero    
     print(f'Maior número é {maior}')
 
-
-
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
 #• Se é menor de idade
