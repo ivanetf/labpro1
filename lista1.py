@@ -95,7 +95,7 @@ def q14():
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
-#    do produto subtraindo o desconto.
+#    do produto subtraindo o desconto.P1
 def q15():
     valor_produto = float(input('Valor do Produto: R$ '))
     perc_desconto = float(input('% do desconto: '))
