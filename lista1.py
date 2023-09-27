@@ -127,6 +127,15 @@ def q15():
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def calcular_novo_salario(salario_atual, percentual_reajuste):
+    return salario_atual + (salario_atual * percentual_reajuste / 100)
+
+        salario_atual = float(input("Digite o salário atual do funcionário: R$  "))
+        percentual_reajuste = float(input("Digite o percentual de reajuste (%): "))
+       
+        novo_salario =  (salario_atual * percentual_reajuste) / 100
+
+        print("O novo salário do funcionário é: R$", novo_salario)
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
@@ -153,7 +162,18 @@ def q15():
 #    programa deve imprimir o valor da prestação atrasada, o período
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
+def q19():
+        valor_prestacao_vencida = float(input("Digite o valor da prestação vencida: R$"))
+        taxa_juros = float(input("Digite a taxa periódica de juros (em decimal): "))
+        periodo_atraso = int(input("Digite o período de atraso (em meses): "))
 
+        juros = valor_prestacao_vencida * (taxa_juros * periodo_atraso)
+        valor_prestacao_atrasada = valor_prestacao_vencida + juros
+
+        print("Valor da prestação atrasada: R$", valor_prestacao_atrasada)
+        print("Período de atraso (em meses):", periodo_atraso)
+        print("Juros pelo período de atraso: R$", juros)
+        print("Valor da prestação acrescido dos juros: R$", valor_prestacao_atrasada)
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
