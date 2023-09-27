@@ -10,12 +10,14 @@ print(x)
 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 def questao02():
-    for x in range(
+    for x in range(100,1,-1)
+      print(x)
+
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
 def questao03():
    for x in range(0,500,5)
-    print(x)
+      print(x)
 
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
@@ -48,26 +50,24 @@ def q06():
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
 def q07():
-alunos = []
-
-for i in range(15):
-    nome = input(f"Digite o nome do aluno {i + 1}: ")
-    nota_prova1 = float(input(f"Digite a nota da prova 1 do aluno {i + 1}: "))
-    nota_prova2 = float(input(f"Digite a nota da prova 2 do aluno {i + 1}: "))
+    mediageral = 0
+      for x in range(15):
+      nome = input(f"Digite o nome do aluno {i + 1}: ")
+      nota_prova1 = float(input(f"Digite a nota da prova 1: "))
+      nota_prova2 = float(input(f"Digite a nota da prova 2: "))
     
-    media = (nota_prova1 + nota_prova2) / 2
+       media = (nota1 + nota2) / 2
+       mediageral+=media
+       print(f'nome:  {nome} ')
+       print(f'nota1: {nota1} ')
+       print(f'nota2: {nota2} ')
+       print(f'media: {media} ')
+
+    print(mediageral/15)
     
-    alunos.append([nome, nota_prova1, nota_prova2, media])
+    
 
-print("\nListagem de Alunos:")
-print("Nome\tProva 1\tProva 2\tMédia")
-for aluno in alunos:
-    print(f"{aluno[0]}\t{aluno[1]}\t{aluno[2]}\t{aluno[3]:.2f}")
 
-soma_medias = sum(aluno[3] for aluno in alunos)
-media_geral = soma_medias / len(alunos)
-
-print(f"\nMédia Geral da Turma: {media_geral:.2f}")
 
 
 #8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
