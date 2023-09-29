@@ -134,14 +134,16 @@ def q10():
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.p1
 def q11():
-    numero = int(input('Número: '))
+    num1 = int(input('num1: '))
+    num2 = int(input('num2: '))
+    num3 = int(input('num3: '))
     maior = numero
-    numero = int(input('Número: '))
-    if numero > maior:
-        maior = numero
-    numero = int(input('Número: '))
-    if numero > maior:
-        maior = numero    
+    if num1 > maior:
+        maior = num1
+    if num2 > maior:
+        maior = num2 
+    if num3 > maior:
+        maior = num3
     print(f'Maior número é {maior}')
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
