@@ -53,8 +53,8 @@ def q07():
     mediageral = 0
       for x in range(15):
       nome = input(f"Digite o nome do aluno {i + 1}: ")
-      nota_prova1 = float(input(f"Digite a nota da prova 1: "))
-      nota_prova2 = float(input(f"Digite a nota da prova 2: "))
+      nota_prova1 = float(input("Digite a nota da prova 1: "))
+      nota_prova2 = float(input("Digite a nota da prova 2: "))
     
        media = (nota1 + nota2) / 2
        mediageral+=media
