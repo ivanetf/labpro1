@@ -31,17 +31,16 @@ q01()
 
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
-for x in range(10):
-    lista.append(chr(random.randrange(65,91)
-      Print(lista) 
-lista=[]
-x = int(input('digite um numero: '))
-for x in range(10):
-    lista.append(chr(random.randrange(65,91)
-    Print(lista)  
-
+def q02():
+  lista=[]
+  for x in range(10):
+     lista.append(chr(random.randrange(65,91)
+  cont = 0                    
+    for letra in lista:
+      print(f' {cont}: {letra}')
+      cont += 1
                      
-
+                
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 
