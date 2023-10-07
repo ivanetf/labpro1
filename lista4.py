@@ -348,16 +348,13 @@ def q15():
 #• quantos são iguais a média
 def q16():
     numeros = []
-
     for x in range(100):
     numero = float(input(f'Digite o {x + 1}º número:' ))
     numeros.append(numero)
     print("Digite os 100 números reais:")
 
     quantidade_igual_30 = numeros.count(30)
-
     media = sum(numeros) / len(numeros)
-
     quantidade_maior_que_media = sum(1 for num in numeros if num > media)
 
     print(f'Quantidade de números iguais a 30: {quantidade_igual_30}')
@@ -382,9 +379,39 @@ def q17():
 #18. Faça um programa que permita entrar com 20 valores numéricos,
 # em que podem existir vários elementos repetidos. Gere
 #uma lista ordenada que terá apenas os elementos não repetidos.
+# Obtendo 20 valores numéricos
+def q18():
+    valores = []
+    for x in range(20):
+    valor = int(input(f'Digite o {x + 1}º valor: '))
+    valores.append(valor)
+    print("Digite 20 valores numéricos:")
+
+    valores_nao_repetidos = set(valores)
+    valores_ordenados = sorted(list(valores_nao_repetidos))
+    print(f'Lista ordenada de elementos não repetidos:')
+    for valor in valores_ordenados:
+    print(valor)
 
 #19. Suponha uma estrutura de 30 elementos contendo: código e telefone. Faça
 #um programa que permita buscar pelo código e imprimir o telefone.
+# Lista de tuplas para armazenar código e telefone
+agenda = [ (1, "111111111"),(2, "222222222"),]
+    telefone = None
+    for cod, tel in agenda:
+        if cod == codigo:
+            telefone = tel
+            break
+
+    if telefone:
+        print(f'Telefone para o código {codigo}: {telefone}')
+    else:
+        print(f'Código {codigo} não encontrado.)
+
+codigo_busca = int(input("Digite o código para buscar o telefone: "))
+
+buscar_e_imprimir_telefone(codigo_busca)
+
 
 #20. Faça um programa que leia a matrícula e a média de 100 alunos. Ordene da maior
 #para a menor nota e imprima uma relação contendo todas as matrículas e médias.
