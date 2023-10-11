@@ -10,7 +10,7 @@ Lista de Exercícios referentes a coleções em python
 def q01():
     lista = []
     for x in range(15):
-        lista.append(random.randrange(100))
+    lista.append(random.randrange(100))
     print(lista)
     num = 0
     erro = True
@@ -44,10 +44,15 @@ def q02():
 def q03():
     lista = []
     for x in range(15):
-    numero = int(input(f"Digite o {i + 1}º número: "))
-    numero.append(numero)   
-        print("Listagem numerada com par ou ímpar: ")
-        print(f"{x + 1}. Número: {numero}, é {tipo}.")
+    cont = 0
+    for num in lista:
+        print(f'({cont}: {num}')
+        if num%2 == 0:
+            print('par')
+        else:
+            print('impar')
+            cont+=1
+q03()
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
