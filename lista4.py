@@ -15,11 +15,11 @@ def q01():
     num = 0
     erro = True
     while erro == True:
-        try:
-            num = int(input('Digite um número a ser buscado: '))
+    try:
+        num = int(input('Digite um número a ser buscado: '))
             erro = False
-        except:
-            print('Informe um valor válido para inteiro!')
+    except:
+        print('Informe um valor válido para inteiro!')
             erro = True
     try:
         print(f'Valor encontrado na posição: {lista.index(num)}')
@@ -33,10 +33,10 @@ def q01():
 def q02():
       lista=[]
       for x in range(10):
-        lista.append(chr(random.randrange(65,91)
+      lista.append(chr(random.randrange(65,91)
       cont = 0                    
       for letra in lista:
-      print(f' {cont}: {letra}')
+          print(f' {cont}: {letra}')
       cont += 1
                                   
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
@@ -46,8 +46,8 @@ def q03():
     for x in range(15):
     numero = int(input(f"Digite o {i + 1}º número: "))
     numero.append(numero)   
-    print("Listagem numerada com par ou ímpar: ")
-    print(f"{x + 1}. Número: {numero}, é {tipo}.")
+        print("Listagem numerada com par ou ímpar: ")
+        print(f"{x + 1}. Número: {numero}, é {tipo}.")
 
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
@@ -57,9 +57,9 @@ def q04():
     numeros = int(input(f"Digite o {i + 1}º número: "))
     lista.append(numeros)
     cont = 0
-    print("Números armazenados:")
+        print("Números armazenados:")
     total_multiplos_seis = contar_multiplos_de_seis(numeros)
-    print(f"Total de números múltiplos de seis: {total_multiplos_seis}")
+        print(f"Total de números múltiplos de seis: {total_multiplos_seis}")
     cont += 1
 
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
@@ -319,11 +319,11 @@ def q14():
     for x in range(50):
     numero = int(input(f"Digite o {x + 1}º número: "))
     lista_original.append(numero)
-    print("Digite os 50 números inteiros:")
+        print("Digite os 50 números inteiros:")
 
     lista_quadrados = [x ** 2 for x in lista_original]
-    print(f'Segunda lista com os quadrados dos números da primeira lista:')
-    print(lista_quadrados)
+        print(f'Segunda lista com os quadrados dos números da primeira lista:')
+        print(lista_quadrados)
 
 
 #15. Faça um programa que leia e armazene vários números, até digitar o número
