@@ -59,7 +59,7 @@ q03()
 def q04():            
     lista = []
     for x in range(8):
-    numeros = int(input(f"Digite o {i + 1}º número: "))
+    numeros = int(input(f"Digite o número: "))
     lista.append(numeros)
     cont = 0
         print("Números armazenados:")
@@ -79,8 +79,8 @@ def q05():
     medias_arredondadas = []
     situacoes = []
     for x in range(15):
-    nota1 = float(input(f"Digite a nota da prova 1 para o aluno {x+1}: "))
-    nota2 = float(input(f"Digite a nota da prova 2 para o aluno {x+1}: "))
+    nota1 = float(input(f"Digite a nota da prova 1 : "))
+    nota2 = float(input(f"Digite a nota da prova 2 : "))
     
     media = (nota1 + nota2) / 2
     media_arredondada = round(media, 1)
@@ -108,7 +108,7 @@ def q06():
     salario = []
     novos_salarios = []
     for x in range(20):
-    salario = float(input(f"Digite o salário da pessoa {i+1}: "))
+    salario = float(input(f"Digite o salário da pessoa : "))
     salarios_originais.append(salario)
     novo_salario = salario * 1.08  # Reajuste de 8%
     novos_salarios.append(novo_salario)
@@ -129,8 +129,8 @@ def q07():
     preco_compra = []
     preco_venda = []
     for x in range(100):
-    preco_compra = float(input(f"Digite o preço de compra da mercadoria {x+1}: "))
-    preco_venda = float(input(f"Digite o preço de venda da mercadoria {x+1}: "))
+    preco_compra = float(input(f"Digite o preço de compra da mercadoria : "))
+    preco_venda = float(input(f"Digite o preço de venda da mercadoria : "))
     precos_compra.append(preco_compra)
     precos_venda.append(preco_venda)
     lucro_menor_10 = 0
@@ -165,10 +165,10 @@ def q08():
         print(f"Produto com código {codigo} não encontrado.")
     produtos = {}
     for x in range(30):
-    codigo = int(input(f"Digite o código do produto {x+1}: "))
-    quantidade = int(input(f"Digite a quantidade do produto {x+1}: "))
-    valor_compra = float(input(f"Digite o valor de compra do produto {x+1}: "))
-    valor_venda = float(input(f"Digite o valor de venda do produto {x+1}: "))
+    codigo = int(input(f"Digite o código do produto : "))
+    quantidade = int(input(f"Digite a quantidade do produto : "))
+    valor_compra = float(input(f"Digite o valor de compra do produto : "))
+    valor_venda = float(input(f"Digite o valor de venda do produto : "))
 
     produtos[codigo] = {
         "codigo": codigo,
@@ -218,7 +218,7 @@ def q10():
     
     lista_original = []
     for x in range(10):
-    elemento = int(input(f'Elemento {x + 1}: '))
+    elemento = int(input(f'Elemento : '))
     lista_original.append(elemento)
     print("Digite os 10 elementos da lista:")
 
@@ -244,7 +244,7 @@ def q10():
 
     lista = []
     for x in range(10):
-    elemento = int(input(f"Elemento {x + 1}: "))
+    elemento = int(input(f"Elemento : "))
     lista_original.append(elemento)
     print("Digite os 10 elementos da lista:")
 
@@ -337,7 +337,7 @@ def q14():
 def q15():
     numeros = []
     for x in range(100):
-    numero = int(input(f'Digite o {x + 1}º número: '))
+    numero = int(input(f'Digite o  número: '))
     print("Digite os números (digite 0 para parar):")
     if numero == 0:
         break
@@ -354,7 +354,7 @@ def q15():
 def q16():
     numeros = []
     for x in range(100):
-    numero = float(input(f'Digite o {x + 1}º número:' ))
+    numero = float(input(f'Digite o  número:' ))
     numeros.append(numero)
     print("Digite os 100 números reais:")
 
@@ -372,7 +372,7 @@ def q16():
 def q17():
     valores = []
     for x in range(30):
-    valor = int(input(f'Digite o {x + 1}º valor:'))
+    valor = int(input(f'Digite o valor:'))
     valores.append(valor)
     print("Digite os 30 valores inteiros:")
 
@@ -388,7 +388,7 @@ def q17():
 def q18():
     valores = []
     for x in range(20):
-    valor = int(input(f'Digite o {x + 1}º valor: '))
+    valor = int(input(f'Digite o  valor: '))
     valores.append(valor)
     print("Digite 20 valores numéricos:")
 
