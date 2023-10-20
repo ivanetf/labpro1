@@ -74,42 +74,50 @@ def q04():
 #Utilize quantas listas forem necessárias para armazenar os dados.
 # Função para calcular a média arredondada e a situação do aluno
 def q05():
-    notas_prova1 = []
-    notas_prova2 = []
-    medias_arredondadas = []
+    def q05():
+    notas1 = []
+    notas2 = []
+    medias = []
     situacoes = []
-    for x in range(15):
-    nota1 = float(input(f"Digite a nota da prova 1 : "))
-    nota2 = float(input(f"Digite a nota da prova 2 : "))
-    
-    media = (nota1 + nota2) / 2
-    media_arredondada = round(media, 1)
-    if media >= 6.0:
-        situacao = "Aprovado"
-    else:
-        situacao = "Reprovado"
-    
-    notas_prova1.append(nota1)
-    notas_prova2.append(nota2)
+    for c in range(15):
+        notas1.append(random.randrange(0,11))
+        notas2.append(random.randrange(0,11))
+        medias.append((notas1[c] + notas2[c])/2)
+        if medias[c] >= 6:
+            situacoes.append('APROVADO')
+        else:
+            situacoes.append('REPROVADO')
+    print('N1\tN2\tMED\tSITUACAO')
+    for c in range(15):
+        print(f'{notas1[c]}\t{notas2[c]}\t{medias[c]}\t{situacoes[c]}')
 
-    media, situacao = (nota1, nota2)
-    medias_arredondadas.append(media)
-    situacoes.append(situacao)
-    print("Listagem de notas, médias e situações dos alunos:")
-    print("Aluno\tNota Prova 1\tNota Prova 2\tMédia\tSituação")
-    for x in range(15):
-    print(f"{x+1}\t{notas_prova1[i]}\t\t{notas_prova2[i]}\t\t{medias_arredondadas[x]}\t{situacoes[x]}")
+def q05_recomendado():
+    alunos = []
+    for c in range(15):
+        aluno = dict()
+        aluno['n1'] = random.randrange(0,11)
+        aluno['n2'] = random.randrange(0,11)        
+        aluno['media'] = (aluno['n1'] + aluno['n2'])/2
+        if aluno['media'] >= 6:
+            aluno['situacao'] = 'APROVADO'
+        else:
+            aluno['situacao'] = 'REPROVADO'
+        alunos.append(aluno)
+    print('N1\tN2\tMED\tSITUACAO')
+    for c in range(15):
+        print(f'{alunos[c]["n1"]}\t{alunos[c]["n2"]}\t{alunos[c]["media"]}\t{alunos[c]["situacao"]}')
+
 
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
 #necessárias.
 def q06():
-    salario = []
-    novos_salarios = []
-    for x in range(20):
-    salario = float(input(f"Digite o salário da pessoa : "))
-    salarios_originais.append(salario)
+    func = []
+    for c in range(20):
+    func = dict()
+    func['salario'] = random.randrange(0,20)
+    func['novo salario'] = random.radrange0,20)
     novo_salario = salario * 1.08  # Reajuste de 8%
     novos_salarios.append(novo_salario)
 
